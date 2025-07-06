@@ -181,6 +181,28 @@ print(response.json()["generated_text"])
 
 ---
 
+## Changelog
+
+### Version 3.0.0 (Current)
+**Date**: July 6, 2025
+
+#### 🚀 Major Changes
+- **Switched to word-level GPT-2 model** for much more coherent, real-sentence generation.
+- **Created `word_level_gpt2.py`**: All training, generation, and interactive code is now word-based.
+- **Removed old character-level code** (`main.py`) to avoid confusion and focus on best practices.
+- **Added FastAPI deployment**: New `app.py` exposes a `/generate` endpoint for text generation via web API.
+- **Updated README.md**: Now fully beginner-friendly, with clear instructions for training, customization, and deployment.
+- **Added Deployment section**: Step-by-step guide for running the FastAPI server and using the API.
+- **Improved troubleshooting and tips**: More guidance for common issues and best practices.
+
+#### 🛠️ Technical Improvements
+- Uses NLTK for robust word tokenization.
+- Model and vocabulary are now word-based for better context and output.
+- Interactive generation and API both use the same model and vocabulary.
+- All code and documentation now focus on word-level best practices.
+
+---
+
 ## License
 This project is for educational purposes. Feel free to use, modify, and share!
 
